@@ -6,6 +6,10 @@ function Blog() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    document.title = "Fluxian Blog — SaaS, MERN & ERP Insights";
+  }, []);
+
+  useEffect(() => {
     const fetchBlogs = async () => {
       try {
         const res = await fetch(`${API_BASE}/api/blog`);

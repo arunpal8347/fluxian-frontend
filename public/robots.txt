@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Disallow: /__fx_admin_92x7
+
+Sitemap: https://fluxian.in/sitemap.xml
