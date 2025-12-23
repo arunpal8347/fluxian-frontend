@@ -33,6 +33,10 @@ function Products() {
     );
   }
 
+  useEffect(() => {
+    document.title = "Products | Fluxian SaaS Portfolio";
+  }, []);
+
   return (
     <section className="section" style={{ paddingTop: "4rem" }}>
       <div className="section-header">

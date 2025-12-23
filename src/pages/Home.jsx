@@ -2,6 +2,8 @@ import { useNavigate } from "react-router-dom";
 import Lottie from "lottie-react";
 import heroAnimation from "../assets/hero-animation.json";
 import Button from "../components/Button";
+import { useEffect } from "react";
+
 
 function Home() {
   const navigate = useNavigate();
@@ -22,6 +24,10 @@ function Home() {
       text: "We’re onboarding new institutions soon. Your success story can be the next one here.",
     },
   ];
+
+  useEffect(() => {
+    document.title = "Fluxian | Smart Software Solutions";
+  }, []);
 
   return (
     <>

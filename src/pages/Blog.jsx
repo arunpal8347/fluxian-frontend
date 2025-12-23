@@ -5,9 +5,6 @@ function Blog() {
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    document.title = "Fluxian Blog — SaaS, MERN & ERP Insights";
-  }, []);
 
   useEffect(() => {
     const fetchBlogs = async () => {
@@ -35,6 +32,10 @@ function Blog() {
       </section>
     );
   }
+
+  useEffect(() => {
+    document.title = "Blog | Fluxian Insights";
+  }, []);
 
   return (
     <section className="section" style={{ paddingTop: "4rem" }}>

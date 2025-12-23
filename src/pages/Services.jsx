@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+
 function Services() {
   const services = [
     {
@@ -43,6 +45,10 @@ function Services() {
       icon: "🛠️",
     },
   ];
+
+  useEffect(() => {
+    document.title = "Services | Fluxian Software Company";
+  }, []);
 
   return (
     <section className="section">

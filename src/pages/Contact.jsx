@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Button from "../components/Button";
 import API_BASE from "../config/api";
 
@@ -38,6 +38,11 @@ function Contact() {
       setStatus("error");
     }
   };
+
+
+  useEffect(() => {
+    document.title = "Contact Fluxian | Get in Touch";
+  }, []);
 
   return (
     <section className="section" style={{ paddingTop: "4rem" }}>
