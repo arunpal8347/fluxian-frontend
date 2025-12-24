@@ -39,7 +39,6 @@ function Contact() {
     }
   };
 
-
   useEffect(() => {
     document.title = "Contact Fluxian | Get in Touch";
   }, []);
@@ -61,7 +60,8 @@ function Contact() {
             className="section-subtitle"
             style={{ maxWidth: "500px", marginBottom: "2rem" }}
           >
-            Have a project or want a demo of FutureEd? Get in touch with our team anytime.
+            Have a project or want a demo of FutureEd? Get in touch with our
+            team anytime.
           </p>
 
           <div
@@ -106,6 +106,7 @@ function Contact() {
               value={form.name}
               onChange={handleChange}
               required
+              placeholder="Enter your full name"
               style={{
                 marginTop: "0.35rem",
                 width: "100%",
@@ -126,6 +127,7 @@ function Contact() {
               value={form.email}
               onChange={handleChange}
               required
+              placeholder="Enter your email address"
               style={{
                 marginTop: "0.35rem",
                 width: "100%",
@@ -142,6 +144,7 @@ function Contact() {
             <input
               type="tel"
               name="phone"
+              placeholder="Enter your phone number"
               value={form.phone}
               onChange={handleChange}
               style={{
@@ -162,6 +165,7 @@ function Contact() {
               value={form.message}
               onChange={handleChange}
               required
+              placeholder="Please describe your query or requirement"
               style={{
                 marginTop: "0.35rem",
                 width: "100%",
@@ -180,7 +184,8 @@ function Contact() {
           {/* SUCCESS / ERROR MESSAGE */}
           {status === "success" && (
             <p style={{ marginTop: "1rem", color: "green" }}>
-              ✔ Message sent successfully!
+              ✔ Thank you! Your message has been submitted successfully. Our
+              team will contact you shortly.
             </p>
           )}
           {status === "error" && (
