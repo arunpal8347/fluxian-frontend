@@ -675,6 +675,7 @@ function Admin() {
                         <td>{c.name}</td>
                         <td>{c.email}</td>
                         <td>{c.phone || "—"}</td>
+                        <td>{c.message}</td>
                         <td>
                           {/* STATUS BADGE (COLOR) */}
                           <span

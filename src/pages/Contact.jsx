@@ -184,8 +184,7 @@ function Contact() {
           {/* SUCCESS / ERROR MESSAGE */}
           {status === "success" && (
             <p style={{ marginTop: "1rem", color: "green" }}>
-              ✔ Thank you! Your message has been submitted successfully. Our
-              team will contact you shortly.
+              ✔ Thank you! We’ve received your message and will contact you shortly.
             </p>
           )}
           {status === "error" && (
