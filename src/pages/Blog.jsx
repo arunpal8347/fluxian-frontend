@@ -7,6 +7,7 @@ function Blog() {
 
 
   useEffect(() => {
+    document.title = "Blog | Fluxian Insights";
     const fetchBlogs = async () => {
       try {
         const res = await fetch(`${API_BASE}/api/blog`);
@@ -33,9 +34,6 @@ function Blog() {
     );
   }
 
-  useEffect(() => {
-    document.title = "Blog | Fluxian Insights";
-  }, []);
 
   return (
     <section className="section" style={{ paddingTop: "4rem" }}>

@@ -7,6 +7,7 @@ function Products() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    document.title = "Products | Fluxian SaaS Portfolio";
     const fetchProducts = async () => {
       try {
         const res = await fetch(`${API_BASE}/api/products`);
@@ -32,10 +33,6 @@ function Products() {
       </section>
     );
   }
-
-  useEffect(() => {
-    document.title = "Products | Fluxian SaaS Portfolio";
-  }, []);
 
   return (
     <section className="section" style={{ paddingTop: "4rem" }}>
